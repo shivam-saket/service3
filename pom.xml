@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.centime</groupId>
-  <artifactId>service3</artifactId>
+  <groupId>com.krystal.ai</groupId>
+  <artifactId>testService</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <properties>
@@ -37,7 +37,7 @@
         
 	</dependencies>
 	<build>
-        <finalName>service3</finalName>
+        <finalName>testService</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
         <testSourceDirectory>src/test/java</testSourceDirectory>
         <resources>
@@ -58,7 +58,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.centime.service3.App</mainClass>
+                    <mainClass>com.krystal.ai.testService.App</mainClass>
                 </configuration>
             </plugin>
             <plugin>

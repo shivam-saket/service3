@@ -1,4 +1,4 @@
-package com.centime.service3.aspect;
+package com.krystal.ai.testService.aspect;
 
 import java.util.Arrays;
 
@@ -16,14 +16,14 @@ public class LoggingAspect {
 	
 	private Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 	
-	@Before("execution(* com.centime.service3.service.*.*(..))")
+	@Before("execution(* com.krystal.ai.testService.*.*(..))")
 	public void logMethodArgument(JoinPoint joinPoint) {
 		String arguments = Arrays.toString(joinPoint.getArgs());
 		logger.info("Method called is:: " + joinPoint.getSignature() + "with arguments::" + arguments);
 
 	}
 	 
-	@Before("@annotation(com.centime.service3.annotation.LogMethodParam)")
+	@Before("@annotation(com.krystal.ai.testService.annotation.LogMethodParam)")
 	public void log(JoinPoint joinPoint) {
 		String arguments = Arrays.toString(joinPoint.getArgs());
 		logger.info("Method called is:: " + joinPoint.getSignature() + " with arguments::" + arguments);

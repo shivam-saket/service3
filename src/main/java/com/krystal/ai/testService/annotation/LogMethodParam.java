@@ -1,4 +1,4 @@
-package com.centime.service3.annotation;
+package com.krystal.ai.testService.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
